@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册界面</title>
+    <style>
+        body {
+            background-color: #fffcfc;
+        }
+
+        .box {
+            margin: 100px auto;
+            max-width: 700px;
+            height: 50px;
+            background-color: rgb(76, 177, 112);
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        h3 {
+            margin-top: -70px;
+            margin-left: 200px;
+            width: 100%;
+
+        }
+
+        table {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-collapse: collapse;
+           
+        }
+
+        th,
+        td {
+            border: 1px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .register-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(76, 177, 112);
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .register-button:hover {
+            background-color: rgb(76, 177, 112);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <div class="box"></div>
+        <h3>注册新用户</h3>
+        <table>
+
+            <tr>
+                <td colspan="2"><input type="text" placeholder="请输入用户名"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="email" placeholder="请输入电子邮件"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button class="register-button">注册新用户</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

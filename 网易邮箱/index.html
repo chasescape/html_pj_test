@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮箱注册界面</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        font-family: "微软雅黑";
+        background: #F1F1F1;
+    }
+
+    .box {
+        margin: 100px auto;
+        max-width: 1000px;
+        height: 600px;
+        background-color: rgb(208, 207, 207);
+        text-align: center;
+        border: 1px solid black;
+    }
+
+
+    a:link,
+    a:visited {
+        color: #2b55a1;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    header,
+    nav {
+        width: 100%;
+        height: 50px;
+    }
+
+    .txtR {
+        margin-right: 20px;
+        margin-top: 25px;
+        float: right;
+    }
+
+    .txtL {
+        margin-left: 20px;
+        margin-top: 13px;
+        float: left;
+    }
+
+    nav {
+        background-color: #2b55a1;
+    }
+
+    nav div img {
+        float: left;
+        margin-top: 17px;
+        margin-left: 35px;
+    }
+
+    .tit {
+        color: #fff;
+        font-family: "微软雅黑";
+        text-align: left;
+        line-height: 50px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 700px;
+    }
+
+    th,
+    td {
+        border: 1px;
+        padding: 10px;
+        font-family: "微软雅黑";
+        color: #090909;
+        vertical-align: middle;
+    }
+
+    th {
+        text-align: right;
+        width: 31%;
+    }
+
+    td {
+        text-align: left;
+        width: 79%;
+    }
+
+    th select,
+    td input {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .tb_text {
+        margin-top: -15px;
+        color: rgb(144, 146, 147)
+    }
+
+    .regButton input[type="submit"] {
+        border: 2px solid green;
+        background-color: green;
+        color: white;
+        padding: 10px 10px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <header>
+            <div class="txtL">
+                <img src="images/logo_wy.png" alt="logo">
+            </div>
+
+            <div class="txtR">
+                <a href="#">反馈意见</a>
+                <a href="#">帮助</a>
+            </div>
+        </header>
+
+        <nav>
+            <div>
+                <img src="images\icon3.png" alt="">
+            </div>
+            <div class="tit">
+                <h2>欢迎注册网易免费邮!您可以选择163、126、yeah.net三大免费邮箱。</h2>
+            </div>
+        </nav>
+
+        <form>
+            <article>
+                <div>
+                    <table>
+                        <tr>
+                            <th>邮件地址</th>
+                            <td>
+                                <input type="text" class="txt" value="建议输入手机号码注册">
+                                <span>@</span>
+                                <select>
+                                    <option> 163.com</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="tb_text">6-18个字符,可使用字母、数字、下划线、推荐以手机号码直接注册</div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <th>密码</th>
+                            <td>
+                                <input type="password" class="txt lTxt">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="tb_text">6-18个字符,区分大小写</div>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <th>确认密码</th>
+                            <td>
+                                <input type="password" class="txt lTxt">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="tb_text">
+                                    请再次输入密码
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <th>手机号码</th>
+                            <td>
+                                <input type="text" class="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="tb_text">密码遗忘或被盗时,可通过手机短信取回密码</div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <th>验证码</th>
+                            <td>
+                                <input type="text" class="txt lTxt">
+                                <span><img src="images\logo_wy.png" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="tb_text">
+                                    <p>请输入图片中的字符,不区分大小写<a href="#">不清楚?换张图片</a></p>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="tb_text">
+                                    <input type="checkbox" checked="checked" class="check">同意"
+                                    <a href="#">服务条款</a>
+                                    <a href="#">隐私保护和个人信息利用政策</a>"
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td>
+                                <div class="regButton"><input type="submit" name="" id="" value="立即注册"></div>
+                            </td>
+                        </tr>
+
+
+
+
+                    </table>
+                </div>
+            </article>
+
+
+            <footer>
+
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>

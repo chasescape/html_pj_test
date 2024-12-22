@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS控制单元格边距</title>
+<style type="text/css">
+table{
+	border:1px solid #30F;      /*设置table的边框*/
+}
+th,td{
+	border:1px solid #30F;     /*为单元格单独设置边框*/
+    padding:50px;              /*为单元格内容与边框设置20px的内边距*/
+	margin:50px;               /*为单元格与单元格边框之间设置20px的外边距*/
+}  
+</style>
+</head>
+<body>
+<table>
+ <tr>
+    <th>游戏名称</th>
+    <th>类型</th>
+    <th>特征</th>
+ </tr>
+ <tr>
+    <th>王者荣耀</th>
+    <td>策略战棋</td>
+    <td>3D 竞技</td>
+ </tr>
+ <tr>
+    <th>天龙八部手游</th>
+    <td>角色扮演</td>
+    <td>3D 武侠</td>
+ </tr>
+</table>
+</body>
+</html>
